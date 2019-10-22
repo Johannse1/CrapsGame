@@ -15,8 +15,26 @@ def roll():
     return dice
 
 
-def playGame():
+def play_game():
     amount_bet = int(input("How much would you like to bet?: "))
+    dice1 = roll()
+    if dice1 == 7 or 11:
+        print("You Win!")
+    elif dice1 == 2 or 3 or 12:
+        print("You Lost! :( Maybe next time!")
+    else:
+        point = dice1
+        print(f"Your point is {point}")
+        return
+
+    dice2 = roll()
+
+
+
+
+
+
+
 
 
 
